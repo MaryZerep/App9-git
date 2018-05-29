@@ -30,15 +30,15 @@ $('#watch').on('click',function(){
 		'Longitude:'	+position.coords.longitude	+'\n'+
 		'Altitude:'	+position.coords.altitude	+'\n'+
 		'Accuracy:'	+position.coords.accuracy	+'\n'+
-		'Altitude Accuracy:'	+position.coords.altitudeAccuracy	+'\n'+
-		'Heading:'	+position.coords.heading	+'\n'+
+		'Altitude Accuracy:' +position.coords.altitudeAccuracy	+'\n'+
+		'Heading:'	+position.coords.heading +'\n'+
 		'Speed:'	+position.coords.speed	+'\n'+
-		'Timestamp:'	+position.timestamp		+'\n');
+		'Timestamp:'	+position.timestamp	+'\n');
 		
 	};
 	
 	function onError(error){
-		alert('code:' +error.code + '\n' + 'message:' +error.message+ '\n');
+		alert('code:' +error.code +'\n'+'message:'+error.message+'\n');
 	}
 }
 	function watchPosition(){
@@ -62,7 +62,7 @@ $('#timestamp').html(position.timestamp);
 	};
 	
 	function onError(error){
-		alert('code:' +error.code +'\n'+'message:' + error.message + '\n');
+		alert('code:' +error.code +'\n'+'message:'+error.message+'\n');
 	}
 	}
  
