@@ -51,7 +51,7 @@ $('#watch').on('click',function(){
 	var watchID = navigator.geolocation.watchPosition(onSuccess,onError,options);
 	function onSuccess(position){
 
-$('#latitud').html(position.coords.latitud);
+$('#latitud').html(position.coords.latitude);
 $('#longitud').html(position.coords.longitude);
 $('#altitud').html(position.coords.altitude);
 $('#accuracy').html(position.coords.accuracy);
